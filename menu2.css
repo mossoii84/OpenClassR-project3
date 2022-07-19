@@ -1,0 +1,227 @@
+@font-face {
+	font-family: 'Shrikhand'; 
+	src: url(./icons_and_police/Shrikhand/Shrikhand-Regular.ttf); 
+}
+@font-face {
+	font-family: 'Roboto'; 
+	src: url(./icons_and_police/Roboto/Roboto-Regular.ttf); 
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+body{
+    height: 100vh;
+    margin:0 auto;
+    font-family: 'Roboto';
+}
+img{
+    object-fit:cover
+}
+
+header{
+display: flex;
+align-items: center;
+margin-top: 10px;
+font-family: 'Shrikhand' !important;
+
+}
+header i {
+    margin-left: 20px;
+    width: 20%;
+}
+header h1 img {
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+
+
+#menu1 img{
+/* background-image: url('./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg'); */
+background-size: 100%;
+width: 100%;
+height: 300px;
+
+}
+.bgBlock{
+    background-color: rgb(235, 235, 233);
+    /* height: 100vh; */
+   padding-bottom: 50px;
+}
+.menuForMenu1{
+  background-color: rgb(235, 235, 233);
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+    padding: 40px 30px 30px 20px;
+    border-radius: 40px 40px 0 0px;
+    margin-top:-40px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+.enteteText{
+    padding-left: 20px;
+    width: 40px;
+}
+hr {
+    border: none; /* Убираем границу */
+    background-color: rgb(0, 255, 149);    /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 3px; /* Толщина линии */
+    width: 40px;
+    margin-top: 5px;
+}
+
+/*  текст тест аниматион */
+.childListmenu1:nth-child(1){
+  animation-name: childDiv1;
+  animation-delay: .5s;
+  animation-duration: 2s;
+  opacity: 0; 
+  animation-fill-mode: forwards;
+  margin-top: 26px;
+}
+.childListmenu1:nth-child(2){
+  animation-name: childDiv1;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  opacity: 0; 
+  animation-fill-mode: forwards;
+  margin-top: 24px;
+}
+.childListmenu1:nth-child(3){
+  animation-name: childDiv1;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+  opacity: 0; 
+  animation-fill-mode: forwards;
+  margin-top: 23px;
+}
+@keyframes childDiv1 {
+  0%    {opacity: .1; }
+  50%   {opacity: .5;}
+  100%  {opacity: 1; margin-top: 20px;}
+}
+
+
+
+
+/* ///// */
+.childListmenu1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0 20px 20px 20px;
+}
+.childListmenu1:nth-child(n){
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    /* width: 100%; */
+    /* важно тут указать позицию и ниже тоже*/
+    position:relative;
+    overflow: hidden;
+}
+.childTitle{
+    width: 100%;
+    padding: 10px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.childTitleStyle{
+  font-weight: 700;
+}
+.childDiscription{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.childPrice{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+  /* animation 1 part */
+.forAnimation {
+    padding: 25px;
+    transition: 1s;
+    min-height: 100%;
+    position:relative;
+    margin-right: -65px;
+  }
+.childListmenu1:hover {
+    cursor: pointer;
+}
+.childListmenu1:hover  .forAnimation {
+    background-color: rgb(0, 255, 149);
+    margin-right: 0;
+    cursor: pointer;
+}
+  /* animation 2 part*/
+.fa-angle-down{
+    border-radius:50%;
+    background-color: azure;
+    padding: 3px 5px;
+    animation:4s;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    color: rgb(0, 255, 149);
+}
+.childListmenu1:hover  .fa-angle-down{
+    transform: rotate(360deg);
+}
+
+
+
+/* button */
+.buttonExplorer{
+  text-align: center;
+  margin: 60px auto 50px auto;
+}
+.buttonExplorer button{
+  padding: 20px 40px;
+  /* background-image: linear-gradient(red, yellow); */
+  background-image: linear-gradient(#FF79DA,#9356DC );
+  /* background-image: linear-gradient(to bottom right, red, yellow); */
+  border-radius: 40px;
+  border: 0px;
+  color:white;
+  font-size: 16px;
+}
+
+
+
+
+/* ///////////////// */
+footer{
+    background-color: gray;
+    color:white;
+    padding: 20px 0;
+  }
+  footer h3{
+    padding: 10px 20px;
+    font-style: italic;
+  }
+  footer div{
+    padding: 5px 20px;
+  }
+  footer span{
+    padding-left: 10px;
+  }
+  footer a{
+    text-decoration: none;
+    color:white
+  }
+ 
+  
