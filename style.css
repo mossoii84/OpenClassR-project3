@@ -89,7 +89,6 @@ padding: 30px 40px 10px 40px;
 .buttonExplorer{
   text-align: center;
   margin: 30px auto 50px auto;
-
 }
 .buttonExplorer button{
   padding: 15px 20px;
@@ -101,7 +100,11 @@ padding: 30px 40px 10px 40px;
   color:white;
   font-size: 16px;
 }
-
+.buttonExplorer button:hover{
+  background-image: linear-gradient(#ff79d991,#9256dca1 );
+  box-shadow: 3px 4px 1px 0;
+  cursor: pointer;
+}
 
 /* ///////////////////////////////////////// */
 .fonctionnement div:nth-child(n){
