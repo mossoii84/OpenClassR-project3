@@ -225,3 +225,46 @@ footer a{
   color:white
 }
 
+
+
+
+/* ///////// MOBILE ////////// */
+@media (min-width: 890px){ 
+/* mob */
+section {
+  display: flex;
+  justify-content:space-around;
+  position: relative;
+  padding: 20px 20px;
+}
+ .fonctionnement div:nth-child(n){
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.fonctionnement h2{
+  position: absolute;
+  display: block;
+  left: 30px;
+  top:20px;
+}
+
+
+/* ////////// mab/////// */
+.platImages .child{
+  width: 25%;
+  margin-top: 100px;
+}
+
+.platImages h2{
+  position: absolute;
+  display: block;
+  left: 30px;
+  top:-30px;
+  width: 100%;
+  
+}
+
+
+
+}
