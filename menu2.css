@@ -19,26 +19,23 @@ body{
     font-family: 'Roboto';
 }
 img{
-    object-fit:cover
+  object-fit:cover;
 }
-
 header{
 display: flex;
 align-items: center;
 margin-top: 10px;
 font-family: 'Shrikhand' !important;
-
+width: 100%;
 }
-header i {
+header .flash {
     margin-left: 20px;
-    width: 20%;
+    flex-grow: 2;
 }
-header h1 img {
-    margin: 0 auto;
-    padding-top: 5px;
+header .logo {
+  flex-grow: 2;
+  padding-top: 5px;
 }
-
-
 
 #menu1 img{
 /* background-image: url('./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg'); */
@@ -201,6 +198,12 @@ hr {
 }
 
 
+.buttonExplorer button:hover{
+  background-image: linear-gradient(#ff79d991,#9256dca1 );
+  box-shadow: 3px 3px 0px #ff79d991;
+  cursor: pointer;
+}
+
 
 
 /* ///////////////// */
@@ -225,3 +228,39 @@ footer{
   }
  
   
+
+
+
+
+
+  /* ///////// MOBILE ////////// */
+@media (min-width: 890px){ 
+  header{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-family: 'Shrikhand' !important;
+    }
+    header .flash {
+        margin-left: 20px;
+        flex-grow: 1;
+      }
+    header .logo {
+        height: 100px;
+        flex-grow: 2;
+        padding-top: 5px;
+    }
+
+  /* mob */
+  section {
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    padding: 20px 20px;
+  }
+.childListmenu1:nth-child(n){
+  width: 30%;
+  height: 80px;
+}
+  
+}
