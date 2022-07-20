@@ -37,7 +37,7 @@ header .logo {
   padding-top: 5px;
 }
 
-#menu1 img{
+main img{
 /* background-image: url('./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg'); */
 background-size: 100%;
 width: 100%;
@@ -78,7 +78,7 @@ hr {
 }
 
 /*  текст тест аниматион */
-.childListmenu1:nth-child(1){
+.childListmenu1:nth-child(2){
   animation-name: childDiv1;
   animation-delay: .5s;
   animation-duration: 2s;
@@ -86,7 +86,7 @@ hr {
   animation-fill-mode: forwards;
   margin-top: 26px;
 }
-.childListmenu1:nth-child(2){
+.childListmenu1:nth-child(3){
   animation-name: childDiv1;
   animation-delay: 1s;
   animation-duration: 2s;
@@ -94,7 +94,7 @@ hr {
   animation-fill-mode: forwards;
   margin-top: 24px;
 }
-.childListmenu1:nth-child(3){
+.childListmenu1:nth-child(4){
   animation-name: childDiv1;
   animation-delay: 1.5s;
   animation-duration: 2s;
@@ -235,22 +235,6 @@ footer{
 
   /* ///////// MOBILE ////////// */
 @media (min-width: 890px){ 
-  header{
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    font-family: 'Shrikhand' !important;
-    }
-    header .flash {
-        margin-left: 20px;
-        flex-grow: 1;
-      }
-    header .logo {
-        height: 100px;
-        flex-grow: 2;
-        padding-top: 5px;
-    }
-
   /* mob */
   section {
     display: flex;
