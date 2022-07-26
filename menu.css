@@ -46,7 +46,6 @@ height: 300px;
 }
 .bgBlock{
     background-color: rgb(235, 235, 233);
-    /* height: 100vh; */
    padding-bottom: 50px;
 }
 .menuForMenu1{
@@ -70,14 +69,13 @@ height: 300px;
 }
 hr {
     border: none; /* Убираем границу */
-    background-color: rgb(0, 255, 149);    /* Цвет линии */
+    background-color: #99E2D0;    /* Цвет линии */
     color: red; /* Цвет линии для IE6-7 */
     height: 3px; /* Толщина линии */
     width: 40px;
     margin-top: 5px;
 }
 
-/*  текст тест аниматион */
 .childListmenu1:nth-child(2){
   animation-name: childDiv1;
   animation-delay: .5s;
@@ -161,7 +159,7 @@ hr {
     cursor: pointer;
 }
 .childListmenu1:hover  .forAnimation {
-    background-color: rgb(0, 255, 149);
+    background-color: #99E2D0;
     margin-right: 0;
     cursor: pointer;
 }
@@ -173,7 +171,8 @@ hr {
     animation:4s;
     transition-duration: 0.8s;
     transition-property: transform;
-    color: rgb(0, 255, 149);
+    color: #99E2D0;
+    /* color: rgb(0, 255, 149); */
 }
 .childListmenu1:hover  .fa-angle-down{
     transform: rotate(360deg);
