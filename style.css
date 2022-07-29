@@ -24,7 +24,15 @@ body{
 img{
   object-fit:cover
 }
-
+h3{
+  font-size: 22px;
+  font-weight: 900;
+}
+h4{
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(128, 127, 127);
+}
 
 .spinner{
   position: fixed;
@@ -35,7 +43,7 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: brown;
+  background-color: #ffa283;
 }
 .spinner::before{
   position: absolute;
@@ -59,7 +67,7 @@ img{
 @keyframes spinnerBG {
   0%{ opacity: 1;}
   50%{ opacity: 1;}
-  100%{ z-index: -1; opacity: 0;}
+  100%{ z-index: -1; opacity: 0; }
 }
 
 
@@ -183,7 +191,6 @@ border-radius: 30px 30px 0 0px;
   text-align: start;
   margin-left: 22px;
   padding: 10px 0 5px 0;
-  font-weight: bold;
 }
 .platEtoile{
   grid-area: platEtoile;
@@ -207,17 +214,21 @@ border-radius: 30px 30px 0 0px;
  padding: 5px 10px;
  border-radius: 4px;
 }
-.fa:hover {
+
+/* тест icon */
+.fa-heart:hover {
   -webkit-text-fill-color: #9356DC;
   background-clip: border-box;
   cursor: pointer;
-  background-color: transparent;
+  /* transition:  2s; */
+
 }
 .fa-regular:hover{
-  color: #FF79DA;
+  transition: 2s;
+  -webkit-text-fill-color: #dca956;
+  background-clip: border-box;
   background-clip: content-box;
   cursor: pointer;
-  background-color: aquamarine;
 }
 
 
