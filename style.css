@@ -214,14 +214,34 @@ border-radius: 30px 30px 0 0px;
 
 
 /* тест icon */
+.fa-heart {
+  cursor: pointer;
+  background-clip: text;
+  font-weight: bold; 
+  /* background: -webkit-linear-gradient(#7325d3 , #d6c7e9); */
+  -webkit-background-clip: text;
+
+}
 .fa-heart:hover {
   cursor: pointer;
   background-clip: text;
-  font-weight: bold;
-  background: -webkit-linear-gradient(#7325d3 , #d6c7e9);
+  font-weight: bold; 
+  /* background: -webkit-linear-gradient(#7325d3 , #d6c7e9); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation-duration: 1s;
+  animation-name: heart;
+  animation-fill-mode: forwards;
 }
+@keyframes heart {
+   0%  {background-color: rgba(255, 0, 0, 0.038); }
+  25%  {background-color: rgba(255, 0, 0, 0.204); } 
+  50%  {background-color: rgba(255, 0, 0, 0.505); } 
+  75%  {background-color: rgba(255, 0, 0, 0.743);  } 
+  100% {background-color: rgba(255, 0, 0, 0.939);  } 
+
+}
+
 
 
 /* //////////////////////////////// */
