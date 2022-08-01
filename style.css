@@ -1,5 +1,4 @@
 /* #9356DC #FF79DA #99E2D0 */
-
 @font-face {
 	font-family: 'Shrikhand'; 
 	src: url(./icons_and_police/Shrikhand/Shrikhand-Regular.ttf); 
@@ -105,9 +104,7 @@ padding: 30px 40px 10px 40px;
 }
 .buttonExplorer button{
   padding: 15px 20px;
-  /* background-image: linear-gradient(red, yellow); */
   background-image: linear-gradient(#FF79DA,#9356DC );
-  /* background-image: linear-gradient(to bottom right, red, yellow); */
   border-radius: 40px;
   border: 0px;
   color:white;
@@ -115,7 +112,7 @@ padding: 30px 40px 10px 40px;
 }
 .buttonExplorer button:hover{
   background-image: linear-gradient(#ff79d991,#9256dca1 );
-  box-shadow: 3px 4px 1px 0;
+  box-shadow: 2px 2px 1px wheat;
   cursor: pointer;
 }
 
@@ -215,28 +212,16 @@ border-radius: 30px 30px 0 0px;
  border-radius: 4px;
 }
 
+
 /* тест icon */
 .fa-heart:hover {
-  -webkit-text-fill-color: #9356DC;
-  background-clip: border-box;
   cursor: pointer;
-  /* transition:  2s; */
-
+  background-clip: text;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#7325d3 , #d6c7e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.fa-regular:hover{
-  transition: 2s;
-  -webkit-text-fill-color: #dca956;
-  background-clip: border-box;
-  background-clip: content-box;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
 
 
 /* //////////////////////////////// */
@@ -259,8 +244,6 @@ footer a{
   text-decoration: none;
   color:white
 }
-
-
 
 
 /* ///////// MOBILE ////////// */

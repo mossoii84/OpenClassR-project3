@@ -65,12 +65,11 @@ height: 300px;
 
 .enteteText{
     padding-left: 20px;
-    width: 40px;
+    width: 80px;
 }
 hr {
     border: none; /* Убираем границу */
     background-color: #99E2D0;    /* Цвет линии */
-    color: red; /* Цвет линии для IE6-7 */
     height: 3px; /* Толщина линии */
     width: 40px;
     margin-top: 5px;
@@ -120,10 +119,9 @@ hr {
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
     height: 100%;
-    /* width: 100%; */
-    /* важно тут указать позицию и ниже тоже*/
-    position:relative;
+    position:relative;/* need relation too*/
     overflow: hidden;
+
 }
 .childTitle{
     width: 100%;
@@ -187,9 +185,7 @@ hr {
 }
 .buttonExplorer button{
   padding: 20px 40px;
-  /* background-image: linear-gradient(red, yellow); */
   background-image: linear-gradient(#FF79DA,#9356DC );
-  /* background-image: linear-gradient(to bottom right, red, yellow); */
   border-radius: 40px;
   border: 0px;
   color:white;
@@ -241,9 +237,10 @@ footer{
     position: relative;
     padding: 20px 20px;
   }
+
 .childListmenu1:nth-child(n){
   width: 30%;
-  height: 80px;
+  /* height: 80px; */
 }
   
 }
